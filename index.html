@@ -782,32 +782,46 @@
     .product-slider { position: relative; }
     .slide { display: none; width: 100%; height: 100%; }
     .slide.active { display: grid; place-items: center; }
-    .slider-controls {
+    .slider-arrow {
       position: absolute;
-      bottom: 12px;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 9;
-      display: flex;
-      gap: 6px;
-      padding: 6px;
-      background: rgba(255,255,255,.76);
-      border-radius: 999px;
-      backdrop-filter: blur(6px);
-    }
-    .slider-dot {
-      border: none;
-      width: 9px;
-      height: 9px;
-      padding: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
+      width: 44px;
+      height: 44px;
       border-radius: 50%;
-      background: rgba(17,17,17,.28);
+      border: none;
+      background: rgba(255,255,255,.96);
+      color: var(--black);
+      font-size: 28px;
+      font-weight: 900;
+      line-height: 1;
+      display: grid;
+      place-items: center;
       cursor: pointer;
+      box-shadow: 0 8px 22px rgba(0,0,0,.18);
     }
-    .slider-dot.active {
-      width: 24px;
-      border-radius: 999px;
-      background: var(--pink);
+    .slider-arrow:hover {
+      background: white;
+    }
+    .slider-arrow-right {
+      right: 14px;
+    }
+    .slider-arrow-left {
+      left: 14px;
+    }
+    @media (max-width: 640px) {
+      .slider-arrow {
+        width: 38px;
+        height: 38px;
+        font-size: 24px;
+      }
+      .slider-arrow-right {
+        right: 10px;
+      }
+      .slider-arrow-left {
+        left: 10px;
+      }
     }
     .info-slide-card {
       width: calc(100% - 34px);
@@ -2041,7 +2055,7 @@
           <div>
             <p class="section-kicker">Shop the collection</p>
             <h2>Dessert jar flavours</h2>
-            <p class="section-desc">Each product image has two slides: the front jar photo and the ingredients/allergy information. Minimum order is 2 jars.</p>
+            <p class="section-desc">Minimum order is 2 jars.</p>
           </div>
           <a class="btn btn-dark" href="#bundles">View bundle deals</a>
         </div>
@@ -2060,9 +2074,9 @@
               <a class="btn btn-primary" href="#bundle-grid" style="margin-top: 24px;">View Bundle Deals →</a>
             </div>
             <div class="bundle-jars">
-              <div class="mini-jar"><div style="background:#7B0714"></div><div style="background:#FFF4F4"></div><div style="background:#A30F22"></div><div style="background:#FFF4F4"></div><div style="background:#7B0714"></div><div style="background:#FFF4F4"></div></div>
+              <!-- <div class="mini-jar"><div style="background:#7B0714"></div><div style="background:#FFF4F4"></div><div style="background:#A30F22"></div><div style="background:#FFF4F4"></div><div style="background:#7B0714"></div><div style="background:#FFF4F4"></div></div>
               <div class="mini-jar" style="height:130px;width:84px;"><div style="background:#E3C879"></div><div style="background:#FFFDF4"></div><div style="background:#D9B765"></div><div style="background:#FFFDF4"></div><div style="background:#E3C879"></div><div style="background:#FFFDF4"></div></div>
-              <div class="mini-jar"><div style="background:#251006"></div><div style="background:#F1D39A"></div><div style="background:#4B220D"></div><div style="background:#F1D39A"></div><div style="background:#251006"></div><div style="background:#F1D39A"></div></div>
+              <div class="mini-jar"><div style="background:#251006"></div><div style="background:#F1D39A"></div><div style="background:#4B220D"></div><div style="background:#F1D39A"></div><div style="background:#251006"></div><div style="background:#F1D39A"></div></div> -->
             </div>
           </div>
 
@@ -2589,18 +2603,24 @@
             <img class="jar-photo" src="${product.infoImage}" alt="${product.shortName} ingredients and allergy information" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
             <div class="info-slide-card" style="display:none;"><h4>${product.shortName}</h4><p><strong>Ingredients:</strong> ${product.ingredients}</p><p><strong>Allergy information:</strong> ${product.allergens}</p></div>
           </div>
-          <div class="slider-controls"><button class="slider-dot active" type="button" aria-label="View product photo" onclick="setProductSlide('${product.id}', 'front')"></button><button class="slider-dot" type="button" aria-label="View ingredients and allergens" onclick="setProductSlide('${product.id}', 'info')"></button></div>
+          <button class="slider-arrow slider-arrow-right" type="button" aria-label="View ingredients and allergy information" data-slider-arrow="right" onclick="setProductSlide('${product.id}', 'info')">›</button>
+          <button class="slider-arrow slider-arrow-left" type="button" aria-label="Back to product photo" data-slider-arrow="left" onclick="setProductSlide('${product.id}', 'front')" style="display: none;">‹</button>
         </div>`;
     }
 
     function setProductSlide(productId, slideName) {
       const slider = document.getElementById(`slider-${productId}`);
       if (!slider) return;
-      slider.querySelectorAll(".slide").forEach(slide => slide.classList.toggle("active", slide.dataset.slide === slideName));
-      const dots = slider.querySelectorAll(".slider-dot");
-      dots.forEach(dot => dot.classList.remove("active"));
-      if (slideName === "front") dots[0].classList.add("active");
-      if (slideName === "info") dots[1].classList.add("active");
+
+      slider.querySelectorAll(".slide").forEach(slide => {
+        slide.classList.toggle("active", slide.dataset.slide === slideName);
+      });
+
+      const rightArrow = slider.querySelector('[data-slider-arrow="right"]');
+      const leftArrow = slider.querySelector('[data-slider-arrow="left"]');
+
+      if (rightArrow) rightArrow.style.display = slideName === "front" ? "grid" : "none";
+      if (leftArrow) leftArrow.style.display = slideName === "info" ? "grid" : "none";
     }
 
     // function createBundleJars(bundle) {
