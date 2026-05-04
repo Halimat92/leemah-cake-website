@@ -1070,6 +1070,269 @@
       line-height: 1.6;
     }
 
+
+
+    /* COMING SOON, ABOUT THE BAKER AND DELIVERY CARDS */
+    .coming-soon-section {
+      background: white;
+      padding: 74px 0;
+      overflow: hidden;
+    }
+
+    .coming-soon-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .coming-soon-title {
+      margin: 0;
+      font-size: clamp(46px, 6vw, 78px);
+      line-height: .95;
+      letter-spacing: -1.2px;
+      color: var(--black);
+    }
+
+    .coming-soon-title em {
+      color: var(--pink);
+      font-style: italic;
+    }
+
+    .coming-soon-intro {
+      color: var(--muted);
+      max-width: 680px;
+      font-size: 18px;
+      line-height: 1.8;
+      margin: 18px 0 36px;
+    }
+
+    .coming-soon-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 28px;
+    }
+
+    .coming-soon-card {
+      border: 1px solid var(--border);
+      border-radius: 36px;
+      background: white;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,.035);
+    }
+
+    .coming-soon-card-top {
+      min-height: 230px;
+      padding: 44px 48px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      gap: 24px;
+      color: white;
+      background: linear-gradient(135deg, #0e0e0e 0%, #1c0d14 54%, #3b0920 100%);
+    }
+
+    .coming-soon-card:nth-child(2) .coming-soon-card-top {
+      background: linear-gradient(135deg, #1b0731 0%, #2b0630 52%, #5c0c2f 100%);
+    }
+
+    .coming-icon {
+      font-size: 54px;
+      line-height: 1;
+    }
+
+    .coming-pill {
+      display: block;
+      width: 100%;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.16);
+      background: rgba(255,255,255,.11);
+      color: rgba(255,255,255,.86);
+      padding: 9px 18px;
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .coming-soon-card h3 {
+      margin: 0;
+      color: white;
+      font-size: 42px;
+      line-height: 1;
+    }
+
+    .coming-soon-card-body {
+      padding: 28px 32px 30px;
+    }
+
+    .coming-soon-card-body p {
+      margin: 0 0 24px;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    .notify-form {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 12px;
+    }
+
+    .notify-form input {
+      border: 1px solid #F0CFE0;
+      border-radius: 999px;
+      padding: 15px 20px;
+      font: inherit;
+      outline: none;
+    }
+
+    .notify-form input:focus {
+      border-color: var(--pink);
+      box-shadow: 0 0 0 4px rgba(232,25,122,.1);
+    }
+
+    .notify-form button {
+      border: none;
+      border-radius: 999px;
+      background: var(--black);
+      color: white;
+      padding: 14px 22px;
+      font-weight: 850;
+      cursor: pointer;
+    }
+
+    .about-baker-section {
+      background: var(--cream);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .about-baker-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 74px 20px;
+      display: grid;
+      grid-template-columns: .95fr 1.05fr;
+      gap: 56px;
+      align-items: center;
+    }
+
+    .baker-image-card {
+      min-height: 440px;
+      border-radius: 46px;
+      background: #F9DCE9;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      border: 1px solid #F4C9DA;
+      box-shadow: 0 18px 45px rgba(232,25,122,.08);
+    }
+
+    .baker-image-card img {
+      width: 100%;
+      height: 100%;
+      min-height: 440px;
+      display: block;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .baker-fallback {
+      font-size: 78px;
+    }
+
+    .about-baker-content h2 {
+      margin: 0;
+      font-size: clamp(44px, 5vw, 64px);
+      line-height: .95;
+    }
+
+    .about-baker-content h2 span {
+      color: var(--pink);
+      font-style: italic;
+    }
+
+    .about-baker-content p {
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.85;
+      margin: 22px 0 0;
+    }
+
+    .delivery-info-section {
+      background: #FDE8F1;
+      padding: 58px 20px;
+    }
+
+    .delivery-info-grid {
+      max-width: 1180px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .delivery-info-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 24px;
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+      box-shadow: 0 8px 24px rgba(0,0,0,.035);
+    }
+
+    .delivery-info-icon {
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: #FFE1EE;
+      display: grid;
+      place-items: center;
+      flex: 0 0 58px;
+      font-size: 27px;
+    }
+
+    .delivery-info-card h3 {
+      margin: 0;
+      font-family: 'Outfit', sans-serif;
+      font-size: 18px;
+      line-height: 1.2;
+    }
+
+    .delivery-info-card p {
+      margin: 8px 0 0;
+      color: var(--muted);
+      line-height: 1.65;
+      font-size: 15px;
+    }
+
+    .stripe-dev-note {
+      display: none;
+    }
+
+    @media (max-width: 900px) {
+      .coming-soon-grid,
+      .about-baker-inner,
+      .delivery-info-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .coming-soon-section { padding: 54px 0; }
+      .coming-soon-inner { padding: 0 16px; }
+      .coming-soon-card-top { min-height: 205px; padding: 30px 26px; }
+      .coming-soon-card h3 { font-size: 36px; }
+      .coming-soon-card-body { padding: 24px 20px; }
+      .notify-form { grid-template-columns: 1fr; }
+      .about-baker-inner { padding: 54px 16px; gap: 32px; }
+      .baker-image-card, .baker-image-card img { min-height: 330px; }
+      .delivery-info-section { padding: 42px 16px; }
+      .delivery-info-card { padding: 20px; }
+    }
+
     /* CUSTOM CAKE ADVERT */
     .custom-cake-section { background: var(--black); color: white; }
     .custom-cake-card {
@@ -1755,6 +2018,20 @@
       }
     }
 
+
+    /* ORDER POLICY NOTE - ADDED ONLY */
+    .order-policy-note {
+      background: #FFF4E5;
+      color: #7a4a00;
+      border: 1px solid #FFDDA3;
+      border-radius: 18px;
+      padding: 12px 14px;
+      line-height: 1.5;
+      margin-top: 14px;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
     /* NEED HELP CHATBOT - ADDED ONLY */
     .help-chatbot {
       position: fixed;
@@ -1926,6 +2203,60 @@
       }
     }
 
+
+    /* ══ REVIEW SYSTEM CSS ══ */
+    .review-form-wrapper {
+      margin-top: 52px;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 34px;
+      padding: 36px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.04);
+      text-align: left;
+    }
+    .review-form-wrapper h3 { margin: 0 0 6px; font-size: 30px; }
+    .review-form-sub { color: var(--muted); margin: 0 0 24px; font-size: 14px; line-height: 1.6; }
+    .star-picker-label { display: block; font-size: 13px; font-weight: 700; color: var(--muted); margin-bottom: 8px; text-transform: uppercase; letter-spacing: .1em; }
+    .star-picker { display: flex; gap: 4px; margin-bottom: 22px; }
+    .star-picker label { font-size: 36px; cursor: pointer; color: #DDD; transition: color .12s, transform .12s; line-height: 1; user-select: none; }
+    .star-picker label:hover, .star-picker label.lit { color: var(--gold); transform: scale(1.12); }
+    .review-submitted-msg { display: none; background: #F0FFF4; border: 1px solid #A8D5B5; border-radius: 18px; padding: 18px 22px; color: #1A6632; font-size: 15px; font-weight: 600; text-align: center; margin-top: 16px; }
+    .review-submitted-msg.show { display: block; }
+
+    /* Admin panel */
+    .admin-panel { position: fixed; inset: 0; z-index: 300; background: rgba(0,0,0,.7); backdrop-filter: blur(6px); display: none; justify-content: center; align-items: center; padding: 16px; }
+    .admin-panel.show { display: flex; }
+    .admin-card { background: white; border-radius: 28px; width: 100%; max-width: 660px; max-height: 90vh; overflow-y: auto; padding: 28px; position: relative; box-shadow: 0 30px 80px rgba(0,0,0,.4); }
+    .admin-card h2 { margin: 0 0 4px; font-size: 30px; }
+    .admin-sub { color: var(--muted); margin: 0 0 22px; font-size: 14px; }
+    .admin-close { position: absolute; top: 18px; right: 18px; border: none; background: var(--blush); border-radius: 50%; width: 40px; height: 40px; font-size: 22px; cursor: pointer; }
+    .admin-login { display: flex; flex-direction: column; gap: 12px; }
+    .admin-login input { border: 1.5px solid var(--border); border-radius: 14px; padding: 13px 16px; font-size: 14px; font-family: inherit; outline: none; width: 100%; }
+    .admin-login input:focus { border-color: var(--pink); }
+    .admin-tabs { display: flex; gap: 8px; margin-bottom: 20px; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
+    .admin-tab { padding: 8px 16px; border-radius: 999px; border: 1.5px solid var(--border); background: white; font-size: 13px; font-weight: 700; cursor: pointer; font-family: inherit; color: var(--muted); display: flex; align-items: center; gap: 6px; }
+    .admin-tab.active { background: var(--pink); color: white; border-color: var(--pink); }
+    .admin-tab-badge { background: rgba(0,0,0,.12); border-radius: 999px; padding: 1px 7px; font-size: 11px; }
+    .admin-tab.active .admin-tab-badge { background: rgba(255,255,255,.25); }
+    .admin-empty { text-align: center; padding: 36px 0; color: var(--muted); font-size: 15px; }
+
+    .review-item { background: var(--cream); border: 1px solid var(--border); border-radius: 20px; padding: 18px; margin-bottom: 12px; }
+    .review-item-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 8px; }
+    .review-item-top strong { font-size: 15px; display: block; }
+    .review-item-stars { color: var(--gold); font-size: 15px; margin: 3px 0; }
+    .review-item-meta { font-size: 12px; color: var(--muted); }
+    .review-item blockquote { margin: 0 0 14px; font-style: italic; color: #3A1A2A; font-size: 14px; line-height: 1.6; border-left: 3px solid var(--border); padding-left: 12px; }
+    .review-item.approved-item { background: #F0FFF4; border-color: #A8D5B5; }
+    .review-item-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+    .btn-approve { background: #1A6632; color: white; border: none; padding: 8px 16px; border-radius: 999px; font-size: 13px; font-weight: 700; cursor: pointer; font-family: inherit; }
+    .btn-reject { background: #FEE2E2; color: #991B1B; border: none; padding: 8px 16px; border-radius: 999px; font-size: 13px; font-weight: 700; cursor: pointer; font-family: inherit; }
+    .btn-delete { background: #1C1C1C; color: white; border: none; padding: 8px 16px; border-radius: 999px; font-size: 13px; font-weight: 700; cursor: pointer; font-family: inherit; }
+
+    @media (max-width: 640px) {
+      .review-form-wrapper { padding: 22px 16px; }
+      .admin-card { padding: 20px 16px; }
+    }
+    /* ══ END REVIEW SYSTEM CSS ══ */
   </style>
 </head>
 
@@ -1959,6 +2290,9 @@
           <a href="#flavours">Flavours</a>
           <a href="#bundles">Bundles</a>
           <a href="#custom-cakes">Custom Cakes</a>
+          <a href="#coming-soon">Coming Soon</a>
+          <a href="#about-baker">About</a>
+          <a href="#delivery-info">Delivery</a>
           <a href="#how-it-works">How it works</a>
           <a href="#reviews">Reviews</a>
           <a href="#contact">Contact</a>
@@ -1997,6 +2331,9 @@
           <a href="#flavours" data-mobile-link>Flavours</a>
           <a href="#bundles" data-mobile-link>Bundles</a>
           <a href="#custom-cakes" data-mobile-link>Custom Cakes</a>
+          <a href="#coming-soon" data-mobile-link>Coming Soon</a>
+          <a href="#about-baker" data-mobile-link>About</a>
+          <a href="#delivery-info" data-mobile-link>Delivery</a>
           <a href="#how-it-works" data-mobile-link>How it works</a>
           <a href="#reviews" data-mobile-link>Reviews</a>
           <a href="#contact" data-mobile-link>Contact</a>
@@ -2034,7 +2371,7 @@
                   <h3>Signature Jar Box</h3>
                   <p>Mix any flavours, add a gift note and choose your quantity.</p>
                 </div>
-                <div class="price-pill"><small>From</small><strong>£7.99</strong></div>
+                <div class="price-pill"><small>From</small><strong>£7.28</strong></div>
               </div>
             </div>
           </div>
@@ -2085,6 +2422,88 @@
           <div class="bundle-note">
             <strong>Mix and match flavours:</strong> When you select a bundle, add your preferred flavour combination in the checkout note. For example: 1 Rouge Velvet, 1 Ivory Dream. In the final website, this can become a proper flavour selector for each jar in the bundle.
           </div>
+        </div>
+      </section>
+
+      <section id="coming-soon" class="coming-soon-section">
+        <div class="coming-soon-inner">
+          <p class="section-kicker">Coming soon</p>
+          <h2 class="coming-soon-title">Something <em>exciting</em> is coming</h2>
+          <p class="coming-soon-intro">We are busy baking up something new. Sign up below to be the first to know when these drop!</p>
+
+          <div class="coming-soon-grid">
+            <article class="coming-soon-card">
+              <div class="coming-soon-card-top">
+                <div class="coming-icon">🍰</div>
+                <span class="coming-pill">Coming soon</span>
+                <h3>Cake Slices</h3>
+              </div>
+              <div class="coming-soon-card-body">
+                <p>Our signature flavours in a generous slice. Rich, layered and ready to enjoy. Perfect for birthdays, celebrations and gifting.</p>
+                <form class="notify-form" data-notify-form>
+                  <input type="email" name="email" placeholder="Your email address" required>
+                  <button type="submit">Notify me</button>
+                </form>
+              </div>
+            </article>
+
+            <article class="coming-soon-card">
+              <div class="coming-soon-card-top">
+                <div class="coming-icon">🎂</div>
+                <span class="coming-pill">Coming soon</span>
+                <h3>Mini Naked Cakes</h3>
+              </div>
+              <div class="coming-soon-card-body">
+                <p>Beautifully rustic mini naked cakes for events, weddings, birthdays and sweet tables. Customisable flavours and decorations available.</p>
+                <form class="notify-form" data-notify-form>
+                  <input type="email" name="email" placeholder="Your email address" required>
+                  <button type="submit">Notify me</button>
+                </form>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="about-baker" class="about-baker-section">
+        <div class="about-baker-inner">
+          <div class="baker-image-card">
+            <img src="Images/baker.jpg" alt="Leemah, the baker behind Leemah Cakes n More" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="baker-fallback" style="display:none;">👩🏽‍🍳</div>
+          </div>
+          <div class="about-baker-content">
+            <p class="section-kicker">The baker behind the jars</p>
+            <h2>Hi, I’m <span>Leemah</span></h2>
+            <p>I’m a Chelmsford-based baker with a deep love for creating desserts that bring joy to people. What started as a passion for baking for family and friends has grown into Leemah Cakes n More.</p>
+            <p>Every jar is made fresh by hand with real ingredients and a lot of love. I believe that everyone deserves a little indulgence, and I want every bite to feel like a special moment.</p>
+            <p>Whether you are treating yourself, gifting someone special or ordering for an event, I put the same care and attention into every single order.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="delivery-info" class="delivery-info-section">
+        <div class="delivery-info-grid">
+          <article class="delivery-info-card">
+            <div class="delivery-info-icon">📦</div>
+            <div>
+              <h3>Standard Delivery</h3>
+              <p>2nd Class Royal Mail. Delivery price is calculated by order weight at checkout.</p>
+            </div>
+          </article>
+          <article class="delivery-info-card">
+            <div class="delivery-info-icon">⚡</div>
+            <div>
+              <h3>Express Delivery</h3>
+              <p>1st Class Royal Mail. Delivery price is calculated by order weight at checkout.</p>
+            </div>
+          </article>
+          <article class="delivery-info-card">
+            <div class="delivery-info-icon">📍</div>
+            <div>
+              <h3>Local Collection</h3>
+              <p>Free collection from Chelmsford. You will receive a collection update after ordering.</p>
+            </div>
+          </article>
         </div>
       </section>
 
@@ -2147,12 +2566,77 @@
       <section id="reviews" class="section reviews">
         <p class="section-kicker">Customer love</p>
         <h2>Sweet words from customers</h2>
-        <div class="review-grid">
-          <div class="review-card"><div class="stars">★★★★★</div><blockquote>“The cake jars looked beautiful and tasted even better. I ordered them as a gift and everyone loved them.”</blockquote><div class="review-author"><div class="avatar">A</div><div><strong>Gbemmy</strong><span>Verified customer</span></div></div></div>
+
+        <!-- REAL CUSTOMER REVIEWS - DO NOT REMOVE -->
+        <div class="review-grid" id="reviews-grid">
+          <div class="review-card"><div class="stars">★★★★★</div><blockquote>“The cake jars looked beautiful and tasted even better. I ordered them as a gift and everyone loved them.”</blockquote><div class="review-author"><div class="avatar">G</div><div><strong>Gbemmy</strong><span>Verified customer</span></div></div></div>
           <div class="review-card"><div class="stars">★★★★★</div><blockquote>“The packaging was so neat and premium. Rouge velvet is definitely my favourite. I will order again.”</blockquote><div class="review-author"><div class="avatar">T</div><div><strong>Temi O.</strong><span>Verified customer</span></div></div></div>
-          <div class="review-card"><div class="stars">★★★★★</div><blockquote>“I’ve tried a lot of cake jars, but this one stands out. The taste is 100% and every layer is so rich and delicious. I’ll definitely be ordering more!”</blockquote><div class="review-author"><div class="avatar">F</div><div><strong>Oppy</strong><span>Verified customer</span></div></div></div>
+          <div class="review-card"><div class="stars">★★★★★</div><blockquote>“I’ve tried a lot of cake jars, but this one stands out. The taste is 100% and every layer is so rich and delicious. I’ll definitely be ordering more!”</blockquote><div class="review-author"><div class="avatar">O</div><div><strong>Oppy</strong><span>Verified customer</span></div></div></div>
+        </div>
+
+        <!-- REVIEW SUBMISSION FORM -->
+        <div class="review-form-wrapper">
+          <h3>Leave a review ⭐</h3>
+          <p class="review-form-sub">Had an order with us? We’d love to hear your honest feedback!</p>
+          <form id="review-form">
+            <span class="star-picker-label">Your rating *</span>
+            <div class="star-picker" id="star-picker">
+              <label data-val="1">★</label>
+              <label data-val="2">★</label>
+              <label data-val="3">★</label>
+              <label data-val="4">★</label>
+              <label data-val="5">★</label>
+            </div>
+            <input type="hidden" id="review-rating" value="0">
+            <div class="two-col" style="margin-bottom:14px">
+              <label class="field"><span>Your name *</span><input id="review-name" required placeholder="e.g. Sarah M." /></label>
+              <label class="field"><span>Flavour you ordered *</span>
+                <select id="review-flavour">
+                  <option value="">Select flavour...</option>
+                  <option>Rouge Velvet</option>
+                  <option>Ivory Dream</option>
+                  <option>Caramel Noir</option>
+                  <option>Strawberry Bliss</option>
+                  <option>Cookies &amp; Cream Noir</option>
+                  <option>Bundle / Mixed</option>
+                </select>
+              </label>
+            </div>
+            <label class="field" style="margin-bottom:20px">
+              <span>Your review *</span>
+              <textarea id="review-text" required placeholder="Tell us what you thought with the taste, packaging, delivery, anything!" style="min-height:110px;resize:none"></textarea>
+            </label>
+            <button class="btn btn-primary" type="submit" style="width:100%">Submit my review ⭐</button>
+          </form>
+          <div class="review-submitted-msg" id="review-submitted-msg">🎉 Thank you for your review! It will appear here once we’ve approved it. We really appreciate your feedback!</div>
         </div>
       </section>
+
+      <!-- ADMIN PANEL (open by clicking footer logo 5 times) -->
+      <div class="admin-panel" id="admin-panel">
+        <div class="admin-card">
+          <button class="admin-close" onclick="closeAdminPanel()">×</button>
+          <div id="admin-login-view">
+            <h2>🔒 Admin Login</h2>
+            <p class="admin-sub">Enter your password to manage reviews.</p>
+            <div class="admin-login">
+              <input type="password" id="admin-pass-input" placeholder="Enter admin password" />
+              <button class="btn btn-primary" style="width:100%" onclick="adminLogin()">Login</button>
+              <div id="admin-login-err" style="color:#991B1B;font-size:13px;font-weight:600;display:none;">❌ Incorrect password. Please try again.</div>
+            </div>
+          </div>
+          <div id="admin-main-view" style="display:none">
+            <h2>📋 Review Manager</h2>
+            <p class="admin-sub">Approve, reject or delete customer reviews before they appear live on your site.</p>
+            <div class="admin-tabs">
+              <button class="admin-tab active" id="tab-pending" onclick="switchAdminTab('pending')">⏳ Pending <span class="admin-tab-badge" id="badge-pending">0</span></button>
+              <button class="admin-tab" id="tab-approved" onclick="switchAdminTab('approved')">✅ Approved <span class="admin-tab-badge" id="badge-approved">0</span></button>
+            </div>
+            <div id="admin-pending-list"></div>
+            <div id="admin-approved-list" style="display:none"></div>
+          </div>
+        </div>
+      </div>
 
       <section id="contact" class="footer">
         <div class="footer-inner">
@@ -2177,6 +2661,7 @@
               <span>📍 Chelmsford, Essex</span>
               <span>✉️ hello@leemahcakes.co.uk</span>
               <span>💬 WhatsApp orders accepted</span>
+              <span>🕒 Order Policy: Ready for pickup or shipped within 48 hours. Cancellations after 6 hours may not be refundable.</span>
             </div>
             <div class="socials">
               <a href="https://www.instagram.com/leemahcakesnmore/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
@@ -2194,7 +2679,7 @@
           <div class="enquiry-card">
             <h2>Quick enquiry</h2>
             <p>Have a question or special request? Send us a quick message and we’ll get back to you.</p>
-            <form class="form-grid" id="quick-enquiry-form" action="https://formsubmit.co/YOUR-EMAIL-HERE" method="POST">
+            <form class="form-grid" id="quick-enquiry-form" action="https://formsubmit.co/YOUR-GMAIL-HERE" method="POST">
               <input type="hidden" name="_subject" value="New quick enquiry from Leemah Cakes website">
               <input type="hidden" name="_template" value="table">
               <input type="hidden" name="_captcha" value="false">
@@ -2368,7 +2853,7 @@
         delivery: `
           <div class="help-chatbot-response">
             <strong>Delivery and pickup</strong><br>
-            At checkout, you can choose pickup, 1st Class delivery or 2nd Class delivery. Delivery fee is calculated based on the number of jars in your order.
+            At checkout, you can choose pickup, 1st Class delivery or 2nd Class delivery. Delivery fee is calculated based on the number of jars in your order. Orders are ready for pickup or shipped within 48 hours. Cancellations after 6 hours may not be refundable.
             <div class="help-chatbot-actions">
               <a class="help-chatbot-link" href="#how-it-works" onclick="closeHelpChatbot()">How it works</a>
             </div>
@@ -2407,14 +2892,14 @@
         shortName: "Rouge Velvet",
         subtitle: "Cream cheese layers",
         description: "Soft red velvet sponge layered with smooth cream cheese frosting and finished for a rich, indulgent treat.",
-        price: 7.99,
+        price: 7.28,
         jarCount: 1,
         tag: "Best Seller",
         bg: "linear-gradient(135deg,#5A0810 0%,#B9152A 48%,#F5A3B3 100%)",
         image: "Images/red.jpeg",
         infoImage: "Images/red-info.jpeg",
-        ingredients: "Red velvet sponge, cream cheese frosting, vanilla, cocoa and decorative crumb.",
-        allergens: "Contains gluten, egg and milk. Made in a kitchen that handles nuts and other allergens.",
+        ingredients: "Wheat flour, sugar, butter, eggs, milk, cocoa powder, cream cheese, icing sugar, vinegar, baking powder, baking soda, salt,food colouring, vanilla flavouring.",
+        allergens: "Contains gluten, egg and milk. Prepared in a kitchen that handles other allergens.",
         layers: ["#6B0710", "#FFF4F4", "#A30F22", "#FFF4F4", "#7B0714", "#FFF4F4"]
       },
       {
@@ -2424,14 +2909,14 @@
         shortName: "Ivory Dream",
         subtitle: "Lemon cream layers",
         description: "Moist vanilla with silky whipped lemon cream. Simple, soft and perfect for birthdays, gifts and everyday cravings.",
-        price: 7.99,
+        price: 7.28,
         jarCount: 1,
         tag: "New",
         bg: "linear-gradient(135deg,#E8D4A4 0%,#FFF8E8 50%,#D7B75C 100%)",
         image: "Images/vanilla.jpeg",
         infoImage: "Images/vanilla-info.jpeg",
-        ingredients: "Vanilla sponge, whipped lemon cream, white chocolate notes and golden crumb.",
-        allergens: "Contains gluten, egg and milk. Made in a kitchen that handles nuts and other allergens.",
+        ingredients: "Wheat flour, sugar, eggs, milk, sunflower oil, whipping cream, icing sugar, baking powder, salt, flavouring.",
+        allergens: "wheat (gluten), eggs, milk, soya. Prepared in a kitchen that handles other allergens.",
         layers: ["#E3C879", "#FFFDF4", "#D9B765", "#FFFDF4", "#E3C879", "#FFFDF4"]
       },
       {
@@ -2441,14 +2926,14 @@
         shortName: "Caramel Noir",
         subtitle: "Rich caramel layers",
         description: "Chocolate cake layered with caramel and smooth frosting. Deep, cosy and made for serious dessert lovers.",
-        price: 7.99,
+        price: 7.28,
         jarCount: 1,
         tag: "Customer Love",
         bg: "linear-gradient(135deg,#1B0C05 0%,#5C351C 52%,#D89952 100%)",
         image: "Images/choco.jpeg",
         infoImage: "Images/choco-info.jpeg",
-        ingredients: "Chocolate sponge, caramel sauce, chocolate frosting and caramel crumb.",
-        allergens: "Contains gluten, egg and milk. Made in a kitchen that handles nuts and other allergens.",
+        ingredients: "Wheat flour, granulated sugar, brown sugar, sunflower oil, eggs, milk, condensed milk, cocoa powder, golden syrup, whipping cream, chocolate, vinegar, baking soda, salt, flavouring.",
+        allergens: "wheat (gluten), eggs, milk. Prepared in a kitchen that handles other allergens.",
         layers: ["#251006", "#F1D39A", "#4B220D", "#F1D39A", "#251006", "#F1D39A"]
       },
       {
@@ -2458,14 +2943,14 @@
         shortName: "Strawberry Bliss",
         subtitle: "Strawberry compote layers",
         description: "Soft strawberry sponge layered with strawberry compote and silky whipped cream for a fresh, fruity and indulgent treat.",
-        price: 7.99,
+        price: 7.28,
         jarCount: 1,
         tag: "Fruity Favourite",
         bg: "linear-gradient(135deg,#7A0F2A 0%,#E8197A 48%,#FFD1E3 100%)",
         image: "Images/strawberry.png",
         infoImage: "Images/strawberry-info.jpeg",
-        ingredients: "Strawberry sponge, strawberry compote, whipped cream, vanilla and decorative crumb.",
-        allergens: "Contains gluten, egg and milk. Made in a kitchen that handles nuts and other allergens.",
+        ingredients: "Wheat flour, sugar, butter, eggs, milk, strawberry yoghurt, condensed milk, icing sugar, strawberry jam, fresh strawberries, lemon juice, baking powder, salt, flavouring, pink food colouring.",
+        allergens: "wheat (gluten), eggs, milk. Prepared in a kitchen that handles other allergens.",
         layers: ["#B3133A", "#FFF0F6", "#E94D75", "#FFF0F6", "#B3133A", "#FFF0F6"]
       },
       {
@@ -2475,14 +2960,14 @@
         shortName: "Cookies & Cream Noir",
         subtitle: "Cookies and cream layers",
         description: "Chocolate sponge layered with cookies and cream filling for a creamy, crunchy and chocolatey dessert jar.",
-        price: 7.99,
+        price: 7.28,
         jarCount: 1,
         tag: "Cookie Lover",
         bg: "linear-gradient(135deg,#0F0F0F 0%,#3A2A2A 48%,#E8E1D8 100%)",
         image: "Images/cookies.png",
         infoImage: "Images/cookies-info.jpeg",
-        ingredients: "Chocolate sponge, cookies and cream filling, whipped cream and cookie crumb.",
-        allergens: "Contains gluten, egg, milk and may contain soya. Made in a kitchen that handles nuts and other allergens.",
+        ingredients: "Wheat flour, sugar, eggs, milk, sunflower oil, butter, whipping cream, icing sugar, cocoa powder, chocolate, baking powder, salt, flavouring, chocolate sandwich cookies (contains wheat, soya).",
+        allergens: "wheat (gluten), eggs, milk, soya. Prepared in a kitchen that handles other allergens.",
         layers: ["#171717", "#F7F2EC", "#2D211D", "#F7F2EC", "#171717", "#F7F2EC"]
       }
     ];
@@ -2501,10 +2986,10 @@
         shortName: "The Trio",
         subtitle: "3 handcrafted jars",
         description: "Perfect for gifting or treating yourself. Pick any 3 flavours.",
-        price: 25.50,
-        oldPrice: 26.97,
+        price: 20.37,
+        oldPrice: 21.84,
         saveText: "Save £1.47",
-        perJar: "£8.50 per jar",
+        perJar: "£6.79 per jar",
         jarCount: 3,
         // tag: "Popular Pick",
         bg: "linear-gradient(135deg,#E8197A 0%,#A60019 100%)",
@@ -2518,10 +3003,10 @@
         shortName: "The Four Pack",
         subtitle: "4 handcrafted jars",
         description: "A generous mix-and-match box for sharing, gifting or stocking up.",
-        price: 33.99,
-        oldPrice: 35.96,
+        price: 27.15,
+        oldPrice: 29.12,
         saveText: "Save £1.97",
-        perJar: "£8.50 per jar",
+        perJar: "£6.79 per jar",
         jarCount: 4,
         // tag: "Great Value",
         tag: "Popular Pick",
@@ -2535,10 +3020,10 @@
         shortName: "The Six Pack",
         subtitle: "6 handcrafted jars",
         description: "Best value. Ideal for families, gifting, events or dessert tables.",
-        price: 49.99,
-        oldPrice: 53.94,
+        price: 32.45,
+        oldPrice: 36.40,
         saveText: "Save £3.95",
-        perJar: "£8.33 per jar",
+        perJar: "£6.49 per jar",
         jarCount: 6,
         tag: "Best Value",
         bg: "linear-gradient(135deg,#4B2D0E 0%,#C9A84C 100%)",
@@ -2751,14 +3236,122 @@ function createBundleJarsFallback(bundle) {
     }
     function setFulfilmentOption(option) { fulfilmentOption = option; renderCheckout(false); }
 
+    function renderDeliveryAddressFields() {
+      if (fulfilmentOption === "pickup") {
+        return `
+          <div class="payment-box">
+            <strong>Pickup details</strong>
+            <p style="color: var(--muted); font-size: 13px; line-height: 1.6; margin: 8px 0 0;">
+              No postcode or delivery address is needed for collection. We will contact you after payment with the pickup address and collection instructions.
+            </p>
+          </div>
+        `;
+      }
+
+      return `
+        <div class="two-col" style="margin-top: 14px;">
+          <label class="field"><span>Postcode</span><input name="postcode" required placeholder="CM1..." /></label>
+          <label class="field"><span>Delivery town/city</span><input name="city" required placeholder="Chelmsford" /></label>
+        </div>
+        <div style="margin-top: 14px;">
+          <label class="field"><span>Delivery address</span><input name="address" required placeholder="House number and street" /></label>
+        </div>
+      `;
+    }
+
     function renderCheckout(success = false) {
       const container = document.getElementById("checkout-content");
       if (success) {
         container.innerHTML = `<div class="success"><div class="success-icon">🎉</div><h2>Order received</h2><p style="color: var(--muted); line-height: 1.7;">Thank you. A real live version would now send the customer confirmation email and send you the order details.</p><button class="btn btn-primary" onclick="finishOrder()">Continue shopping</button></div>`;
         return;
       }
-      container.innerHTML = `<form id="checkout-form"><h2>Checkout</h2><p class="modal-sub">Choose pickup, 1st Class delivery or 2nd Class delivery. Delivery fee updates based on the number of jars in your order.</p><div class="two-col"><label class="field"><span>Full name</span><input required placeholder="Your name" /></label><label class="field"><span>Email</span><input required type="email" placeholder="you@email.com" /></label></div><div class="two-col" style="margin-top: 14px;"><label class="field"><span>Phone</span><input required placeholder="+44..." /></label><label class="field"><span>Postcode</span><input required placeholder="CM1..." /></label></div><div style="margin-top: 14px;"><label class="field"><span>Address</span><input required placeholder="House number and street" /></label></div><div style="margin-top: 14px;"><label class="field"><span>Flavour choices / gift note / delivery instruction</span><textarea placeholder="For bundles, write your flavour choices here. Example: 2 Rouge Velvet, 1 Ivory Dream."></textarea></label></div><div class="payment-box"><strong>Delivery / collection option</strong>${renderFulfilmentOptions()}</div><div class="payment-box"><strong>💳 Secure payment</strong><div class="payment-placeholder">Card details will appear here when payment is connected</div><p style="color: var(--muted); font-size: 12px; line-height: 1.6;">Payment connection can be added at the final stage.</p></div><div class="summary"><div class="summary-row"><span>Total jars</span><strong>${getTotalJars()}</strong></div><div class="summary-row"><span>Subtotal</span><strong>${formatMoney(getSubtotal())}</strong></div><div class="summary-row"><span>${fulfilmentOption === "pickup" ? "Pickup" : fulfilmentOption === "first" ? "1st Class delivery" : "2nd Class delivery"}</span><strong>${getDelivery() === 0 ? "Free" : formatMoney(getDelivery())}</strong></div><div class="summary-total"><span>Total</span><span>${formatMoney(getTotal())}</span></div></div><button class="btn btn-primary" type="submit" style="width: 100%; margin-top: 18px;">Place order</button></form>`;
-      document.getElementById("checkout-form").addEventListener("submit", function(event) { event.preventDefault(); renderCheckout(true); });
+
+      container.innerHTML = `<form id="checkout-form"><h2>Checkout</h2><p class="modal-sub">Choose pickup, 1st Class delivery or 2nd Class delivery. Delivery fee updates based on the number of jars in your order.</p><div class="two-col"><label class="field"><span>Full name</span><input name="name" required placeholder="Your name" /></label><label class="field"><span>Email</span><input name="email" required type="email" placeholder="you@email.com" /></label></div><div style="margin-top: 14px;"><label class="field"><span>Phone</span><input name="phone" required placeholder="+44..." /></label></div><div class="payment-box"><strong>Delivery / collection option</strong>${renderFulfilmentOptions()}<p style="color: var(--muted); font-size: 12px; line-height: 1.6; margin: 8px 0 0;">Estimated parcel weight: ${getCartWeightKg()}kg. Delivery is added separately so discounts do not reduce the postage fee.</p></div>${renderDeliveryAddressFields()}<div class="order-policy-note"><strong>Order Policy:</strong> Your order will be ready for pickup or shipped within 48 hours. Cancellations made after 6 hours may not be refundable, as each jar is prepared fresh to order.</div><div style="margin-top: 14px;"><label class="field"><span>Flavour choices / gift note / delivery instruction</span><textarea name="orderNote" placeholder="For bundles, write your flavour choices here. Example: 2 Rouge Velvet, 1 Ivory Dream."></textarea></label></div><div style="margin-top: 14px;"><label class="field"><span>Coupon code </span><input name="couponCode" placeholder="e.g. LAUNCH10" /></label></div><div class="payment-box"><strong>💳 Secure payment</strong><div class="payment-placeholder">You will be taken to Stripe secure checkout when you place the order.</div><p style="color: var(--muted); font-size: 12px; line-height: 1.6;">Netlify Functions will create the Stripe checkout session securely using your Stripe secret key.</p></div><div class="summary"><div class="summary-row"><span>Total jars</span><strong>${getTotalJars()}</strong></div><div class="summary-row"><span>Subtotal</span><strong>${formatMoney(getSubtotal())}</strong></div><div class="summary-row"><span>${fulfilmentOption === "pickup" ? "Pickup" : fulfilmentOption === "first" ? "1st Class delivery" : "2nd Class delivery"}</span><strong>${getDelivery() === 0 ? "Free" : formatMoney(getDelivery())}</strong></div><div class="summary-total"><span>Total</span><span>${formatMoney(getTotal())}</span></div></div><button class="btn btn-primary" type="submit" style="width: 100%; margin-top: 18px;">Place order</button></form>`;
+      document.getElementById("checkout-form").addEventListener("submit", async function(event) {
+        event.preventDefault();
+        const form = event.target;
+        const submitButton = form.querySelector('button[type="submit"]');
+        const formData = new FormData(form);
+        const orderDetails = {
+          customer: {
+            name: formData.get("name") || "",
+            email: formData.get("email") || "",
+            phone: formData.get("phone") || "",
+            postcode: fulfilmentOption === "pickup" ? "" : (formData.get("postcode") || ""),
+            city: fulfilmentOption === "pickup" ? "" : (formData.get("city") || ""),
+            address: fulfilmentOption === "pickup" ? "" : (formData.get("address") || "")
+          },
+          orderNote: formData.get("orderNote") || "",
+          couponCode: formData.get("couponCode") || ""
+        };
+
+        if (submitButton) {
+          submitButton.disabled = true;
+          submitButton.textContent = "Taking you to secure payment...";
+        }
+
+        try {
+          await submitStripeCheckout(orderDetails);
+        } catch (error) {
+          alert(error.message || "Something went wrong. Please try again.");
+          if (submitButton) {
+            submitButton.disabled = false;
+            submitButton.textContent = "Place order";
+          }
+        }
+      });
+    }
+
+    function getCartWeightKg() {
+      const jars = getTotalJars();
+      if (jars <= 0) return 0;
+      if (jars <= 2) return 0.7;
+      if (jars === 3) return 1.05;
+      if (jars === 4) return 1.4;
+      if (jars <= 6) return 2.1;
+      return Math.ceil(jars / 2) * 0.7;
+    }
+
+    function getStripeLineItems() {
+      return cart.map(item => ({
+        id: item.id,
+        name: item.shortName,
+        quantity: item.qty,
+        jarCount: item.jarCount || 1,
+        unitAmount: Math.round(item.price * 100)
+      }));
+    }
+
+    async function submitStripeCheckout(orderDetails) {
+      const payload = {
+        items: getStripeLineItems(),
+        totalJars: getTotalJars(),
+        estimatedWeightKg: getCartWeightKg(),
+        fulfilmentOption,
+        deliveryAmount: Math.round(getDelivery() * 100),
+        subtotalAmount: Math.round(getSubtotal() * 100),
+        couponCode: orderDetails.couponCode || "",
+        customer: orderDetails.customer,
+        orderNote: orderDetails.orderNote
+      };
+
+      const response = await fetch("/.netlify/functions/create-checkout", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      });
+
+      if (!response.ok) {
+        throw new Error("Checkout could not be created. Please try again or contact us on WhatsApp.");
+      }
+
+      const session = await response.json();
+      if (session.url) {
+        window.location.href = session.url;
+        return;
+      }
+
+      throw new Error("Stripe did not return a checkout URL.");
     }
 
     function startCheckout() {
@@ -2782,6 +3375,13 @@ function createBundleJarsFallback(bundle) {
       document.querySelectorAll("[data-close-modal]").forEach(button => button.addEventListener("click", function() { closeModal(this.closest(".modal-backdrop").id); }));
       document.querySelectorAll(".modal-backdrop").forEach(backdrop => backdrop.addEventListener("click", function(event) { if (event.target === this) closeModal(this.id); }));
       document.getElementById("custom-form").addEventListener("submit", function(event) { event.preventDefault(); alert("Enquiry submitted. In a live site, this will be sent to your email or WhatsApp."); closeModal("custom-modal"); });
+      document.querySelectorAll("[data-notify-form]").forEach(form => {
+        form.addEventListener("submit", function(event) {
+          event.preventDefault();
+          alert("Thank you. We’ll let you know when this launches.");
+          form.reset();
+        });
+      });
       document.getElementById("quick-enquiry-form").addEventListener("submit", function(event) {
         const formAction = this.getAttribute("action") || "";
         if (formAction.includes("YOUR-EMAIL-HERE")) {
@@ -2790,6 +3390,244 @@ function createBundleJarsFallback(bundle) {
         }
       });
     });
+
+    /* ══ REVIEW SYSTEM JS ══ */
+    // ⚠️ CHANGE THIS to your own secret password before going live!
+    var ADMIN_PW = "Leemah2026!";
+
+    var pendingReviews = [];
+    var approvedReviews = [];
+    var selectedRating = 0;
+    var adminAuthed = false;
+    var adminTaps = 0;
+    var adminTapReset = null;
+    var currentAdminTab = "pending";
+
+    function loadReviewData() {
+      try {
+        pendingReviews = JSON.parse(localStorage.getItem("lc_pending") || "[]");
+        approvedReviews = JSON.parse(localStorage.getItem("lc_approved") || "[]");
+      } catch(e) { pendingReviews = []; approvedReviews = []; }
+    }
+
+    function saveReviewData() {
+      localStorage.setItem("lc_pending", JSON.stringify(pendingReviews));
+      localStorage.setItem("lc_approved", JSON.stringify(approvedReviews));
+    }
+
+    // Star picker
+    (function setupStars() {
+      var stars = document.querySelectorAll("#star-picker label");
+      if (!stars.length) return;
+      stars.forEach(function(star) {
+        star.addEventListener("click", function() {
+          selectedRating = parseInt(this.getAttribute("data-val"));
+          document.getElementById("review-rating").value = selectedRating;
+          stars.forEach(function(s, i) { s.classList.toggle("lit", i < selectedRating); });
+        });
+        star.addEventListener("mouseover", function() {
+          var val = parseInt(this.getAttribute("data-val"));
+          stars.forEach(function(s, i) { s.style.color = i < val ? "var(--gold)" : "#DDD"; });
+        });
+        star.addEventListener("mouseout", function() {
+          stars.forEach(function(s, i) { s.style.color = i < selectedRating ? "var(--gold)" : "#DDD"; });
+        });
+      });
+    })();
+
+    // Review form submit
+    var reviewForm = document.getElementById("review-form");
+    if (reviewForm) {
+      reviewForm.addEventListener("submit", function(e) {
+        e.preventDefault();
+        var rating = parseInt(document.getElementById("review-rating").value || "0");
+        var name = document.getElementById("review-name").value.trim();
+        var flavour = document.getElementById("review-flavour").value;
+        var text = document.getElementById("review-text").value.trim();
+        if (rating === 0) { alert("Please select a star rating before submitting."); return; }
+        if (!flavour) { alert("Please select the flavour you ordered."); return; }
+        if (!text) { alert("Please write your review before submitting."); return; }
+        loadReviewData();
+        pendingReviews.push({
+          id: Date.now(),
+          name: name,
+          flavour: flavour,
+          rating: rating,
+          text: text,
+          date: new Date().toLocaleDateString("en-GB", { day:"numeric", month:"long", year:"numeric" })
+        });
+        saveReviewData();
+        reviewForm.style.display = "none";
+        var msg = document.getElementById("review-submitted-msg");
+        if (msg) msg.classList.add("show");
+      });
+    }
+
+    // Render approved reviews from storage into the live grid
+    function renderLiveReviews() {
+      loadReviewData();
+      var grid = document.getElementById("reviews-grid");
+      if (!grid || !approvedReviews.length) return;
+      var extra = approvedReviews.map(function(r) {
+        var initial = (r.name || "?").charAt(0).toUpperCase();
+        var stars = "★".repeat(r.rating) + "☆".repeat(5 - r.rating);
+        return "<div class='review-card'><div class='stars'>" + stars + "</div><blockquote>\u201c" + esc(r.text) + "\u201d</blockquote><div class='review-author'><div class='avatar'>" + initial + "</div><div><strong>" + esc(r.name) + "</strong><span>" + esc(r.flavour) + " \u00b7 Verified customer</span></div></div></div>";
+      }).join("");
+      // Append after the hardcoded reviews
+      grid.insertAdjacentHTML("beforeend", extra);
+    }
+
+    // Admin — tap footer logo 5 times quickly
+    function handleAdminTap() {
+      adminTaps++;
+      clearTimeout(adminTapReset);
+      if (adminTaps >= 5) { adminTaps = 0; openAdminPanel(); return; }
+      adminTapReset = setTimeout(function() { adminTaps = 0; }, 2000);
+    }
+
+    function openAdminPanel() {
+      loadReviewData();
+      var panel = document.getElementById("admin-panel");
+      if (!panel) return;
+      panel.classList.add("show");
+      document.body.style.overflow = "hidden";
+      if (adminAuthed) { showAdminMain(); } 
+      else { document.getElementById("admin-login-view").style.display = "block"; document.getElementById("admin-main-view").style.display = "none"; }
+    }
+
+    function closeAdminPanel() {
+      var panel = document.getElementById("admin-panel");
+      if (panel) panel.classList.remove("show");
+      document.body.style.overflow = "";
+    }
+
+    function adminLogin() {
+      var val = document.getElementById("admin-pass-input").value;
+      var err = document.getElementById("admin-login-err");
+      if (val === ADMIN_PW) {
+        adminAuthed = true;
+        err.style.display = "none";
+        document.getElementById("admin-pass-input").value = "";
+        showAdminMain();
+      } else {
+        err.style.display = "block";
+        document.getElementById("admin-pass-input").value = "";
+      }
+    }
+
+    // Allow Enter key to login
+    var passInput = document.getElementById("admin-pass-input");
+    if (passInput) { passInput.addEventListener("keydown", function(e) { if (e.key === "Enter") adminLogin(); }); }
+
+    function showAdminMain() {
+      document.getElementById("admin-login-view").style.display = "none";
+      document.getElementById("admin-main-view").style.display = "block";
+      switchAdminTab("pending");
+    }
+
+    function switchAdminTab(tab) {
+      currentAdminTab = tab;
+      document.getElementById("tab-pending").classList.toggle("active", tab === "pending");
+      document.getElementById("tab-approved").classList.toggle("active", tab === "approved");
+      document.getElementById("admin-pending-list").style.display = tab === "pending" ? "block" : "none";
+      document.getElementById("admin-approved-list").style.display = tab === "approved" ? "block" : "none";
+      if (tab === "pending") renderAdminPending();
+      else renderAdminApproved();
+    }
+
+    function starsHtml(n) { return "★".repeat(n) + "☆".repeat(5 - n); }
+
+    function renderAdminPending() {
+      loadReviewData();
+      var list = document.getElementById("admin-pending-list");
+      var badge = document.getElementById("badge-pending");
+      if (badge) badge.textContent = pendingReviews.length;
+      if (!pendingReviews.length) { list.innerHTML = "<div class=\'admin-empty\'>✅ No pending reviews right now!</div>"; return; }
+      list.innerHTML = pendingReviews.map(function(r) {
+        return "<div class=\'review-item\'><div class=\'review-item-top\'><div><strong>" + esc(r.name) + "</strong><div class=\'review-item-stars\'>" + starsHtml(r.rating) + "</div><div class=\'review-item-meta\'>" + esc(r.flavour) + " · " + r.date + "</div></div></div><blockquote>" + esc(r.text) + "</blockquote><div class=\'review-item-actions\'><button class=\'btn-approve\' onclick=\'approveReview(" + r.id + ")\'>✅ Approve & Publish</button><button class=\'btn-delete\' onclick=\'deletePending(" + r.id + ")\'>🗑 Delete</button></div></div>";
+      }).join("");
+    }
+
+    function renderAdminApproved() {
+      loadReviewData();
+      var list = document.getElementById("admin-approved-list");
+      var badge = document.getElementById("badge-approved");
+      if (badge) badge.textContent = approvedReviews.length;
+      if (!approvedReviews.length) { list.innerHTML = "<div class=\'admin-empty\'>No approved reviews yet.</div>"; return; }
+      list.innerHTML = approvedReviews.map(function(r) {
+        return "<div class=\'review-item approved-item\'><div class=\'review-item-top\'><div><strong>" + esc(r.name) + "</strong><div class=\'review-item-stars\'>" + starsHtml(r.rating) + "</div><div class=\'review-item-meta\'>" + esc(r.flavour) + " · " + r.date + "</div></div></div><blockquote>" + esc(r.text) + "</blockquote><div class=\'review-item-actions\'><button class=\'btn-delete\' onclick=\'deleteApproved(" + r.id + ")\'>🗑 Remove from site</button></div></div>";
+      }).join("");
+    }
+
+    function approveReview(id) {
+      loadReviewData();
+      var r = pendingReviews.find(function(x) { return x.id === id; });
+      if (!r) return;
+      pendingReviews = pendingReviews.filter(function(x) { return x.id !== id; });
+      approvedReviews.unshift(r);
+      saveReviewData();
+      renderAdminPending();
+      renderAdminApproved();
+      // Add to live grid immediately
+      var grid = document.getElementById("reviews-grid");
+      if (grid) {
+        var stars = "★".repeat(r.rating) + "☆".repeat(5 - r.rating);
+        var initial = r.name.charAt(0).toUpperCase();
+        grid.insertAdjacentHTML("beforeend", "<div class=\'review-card\'><div class=\'stars\'>" + stars + "</div><blockquote>\u201c" + esc(r.text) + "\u201d</blockquote><div class=\'review-author\'><div class=\'avatar\'>" + initial + "</div><div><strong>" + esc(r.name) + "</strong><span>" + esc(r.flavour) + " \u00b7 Verified customer</span></div></div></div>");
+      }
+    }
+
+    function deletePending(id) {
+      if (!confirm("Delete this review permanently?")) return;
+      loadReviewData();
+      pendingReviews = pendingReviews.filter(function(x) { return x.id !== id; });
+      saveReviewData();
+      renderAdminPending();
+    }
+
+    function deleteApproved(id) {
+      if (!confirm("Remove this review from your website?")) return;
+      loadReviewData();
+      approvedReviews = approvedReviews.filter(function(x) { return x.id !== id; });
+      saveReviewData();
+      renderAdminApproved();
+      // Refresh page to update live grid
+      setTimeout(function() { location.reload(); }, 400);
+    }
+
+    function esc(str) {
+      return String(str || "").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#39;");
+    }
+
+    // Close admin by clicking backdrop
+    var adminPanel = document.getElementById("admin-panel");
+    if (adminPanel) { adminPanel.addEventListener("click", function(e) { if (e.target === adminPanel) closeAdminPanel(); }); }
+
+    // Attach footer logo tap handler
+    var footerLogo = document.querySelector("#contact .lc-logo");
+    if (footerLogo) { footerLogo.style.cursor = "pointer"; footerLogo.addEventListener("click", handleAdminTap); }
+
+    // Load approved reviews on page load
+    renderLiveReviews();
+    /* ══ END REVIEW SYSTEM JS ══ */
+
   </script>
+
+
+  <!--
+    STRIPE + NETLIFY SETUP DIRECTION
+    1. Create this file in your project: netlify/functions/create-checkout.js
+    2. Add your Stripe secret key in Netlify: Site settings > Environment variables > STRIPE_SECRET_KEY
+    3. The website sends cart items, delivery option, estimated weight and coupon code to that function.
+    4. The function should create a Stripe Checkout Session and return { url: session.url }.
+    5. Delivery is sent as a separate line item so coupon codes can be applied only to cake jar products, not postage.
+
+    Weight logic used by the website:
+    2 jars = 700g
+    3 jars = 1.05kg
+    4 jars = 1.4kg
+    6 jars = 2.1kg
+  -->
+
 </body>
 </html>
